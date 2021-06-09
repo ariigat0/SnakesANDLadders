@@ -7,7 +7,8 @@ using namespace std;
 #ifndef LADDER_TILE
 #define LADDER_TILE
 
-class LadderTile : public Tile {
+class LadderTile : public Tile 
+{
 private:
 	int reward;
 
@@ -22,4 +23,4 @@ public:
 	friend ostream& operator << (ostream& out, LadderTile* lt);
 };
 
-#endif // !LADDER_TILE
+#endif //LADDER_TILE

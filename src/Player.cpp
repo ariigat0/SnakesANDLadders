@@ -1,20 +1,34 @@
 #include "Player.h"
 
-Player::Player(string _name) {
+Player::Player(string _name) 
+{
 	name = _name; 
 	prevPos = 1;
 	pos = 1;
 }
 
-Player::~Player() { }
+Player::~Player() 
+{ 
 
-string Player::getName() { return name; }
+}
 
-int Player::getPos() { return pos; }
+string Player::getName() 
+{ 
+	return name; 
+}
 
-int Player::getPrevPos() { return prevPos; }
+int Player::getPos() 
+{ 
+	return pos; 
+}
 
-void Player::setPos(int _pos) { 
+int Player::getPrevPos() 
+{ 
+	return prevPos; 
+}
+
+void Player::setPos(int _pos) 
+{ 
 	prevPos = pos;
 	pos = _pos;
 

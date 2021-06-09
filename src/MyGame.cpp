@@ -126,7 +126,8 @@ void MyGame::Continue() {
 
 }
 
-void MyGame::CheckPlayersTurns() {
+void MyGame::CheckPlayersTurns() 
+{
 	turn->AddTurn();
 	if (players[playersTurn]->getPos() < board->getNumberTiles())
 	{

@@ -7,7 +7,8 @@ using namespace std;
 #ifndef TURN
 #define TURN
 
-class Turn {
+class Turn 
+{
 private:
 	int totalTurns;
 
@@ -20,4 +21,4 @@ public:
 	friend ostream& operator << (ostream& out, Turn* turn);
 };
 
-#endif // !TURN
+#endif //TURN

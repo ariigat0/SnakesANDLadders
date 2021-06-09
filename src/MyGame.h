@@ -12,7 +12,8 @@ using namespace std;
 #ifndef GAME
 #define GAME
 
-class MyGame {
+class MyGame 
+{
 private:
 	Board* board;
 	Dice* dice = new Dice();
@@ -43,4 +44,4 @@ public:
 	void Start();
 };
 
-#endif // !GAME
+#endif //GAME

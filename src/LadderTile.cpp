@@ -1,18 +1,37 @@
 #include "LadderTile.h"
 
-LadderTile::LadderTile(int _n) : Tile(_n) { reward = 3; }
+LadderTile::LadderTile(int _n) : Tile(_n) 
+{ 
+	reward = 3; 
+}
 
-LadderTile::~LadderTile() { }
+LadderTile::~LadderTile() 
+{ 
 
-string LadderTile::getType() { return "L"; }
+}
 
-int LadderTile::getBonus() { return getReward(); }
+string LadderTile::getType() 
+{ 
+	return "L"; 
+}
 
-int LadderTile::getReward() { return reward; }
+int LadderTile::getBonus() 
+{ 
+	return getReward(); 
+}
 
-void LadderTile::setReward(int _reward) { reward = _reward; }
+int LadderTile::getReward() 
+{ 
+	return reward; 
+}
 
-ostream& operator<<(ostream& out, LadderTile* lt) {
+void LadderTile::setReward(int _reward) 
+{ 
+	reward = _reward; 
+}
+
+ostream& operator<<(ostream& out, LadderTile* lt) 
+{
 	out << lt->toString();
 	return out;
 }

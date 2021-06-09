@@ -7,7 +7,8 @@ using namespace std;
 #ifndef SNAKE_TILE
 #define SNAKE_TILE
 
-class SnakeTile : public Tile {
+class SnakeTile : public Tile 
+{
 private:
 	int penalty;
 
@@ -22,4 +23,4 @@ public:
 	friend ostream& operator << (ostream& out, SnakeTile* st);
 };
 
-#endif // !SNAKE_TILE
+#endif //SNAKE_TILE

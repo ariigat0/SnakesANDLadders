@@ -7,7 +7,8 @@ using namespace std;
 #ifndef TILE
 #define TILE
 
-class Tile {
+class Tile 
+{
 private:
 	friend class Board;
 	int number;
@@ -28,4 +29,4 @@ public:
 	int operator+(Tile& t);
 };
 
-#endif // !TILE
+#endif //TILE

@@ -7,7 +7,8 @@ using namespace std;
 #ifndef PLAYER
 #define PLAYER
 
-class Player {
+class Player 
+{
 private:
 	string name;
 	int pos, prevPos;
@@ -22,4 +23,4 @@ public:
 	void setPos(int _pos);
 };
 
-#endif // !PLAYER
+#endif //PLAYER

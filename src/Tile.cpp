@@ -1,26 +1,57 @@
 #include "Tile.h"
 
-Tile::Tile() { number = 0; }
+Tile::Tile() 
+{ 
+	number = 0; 
+}
 
-Tile::Tile(int _number) { number = _number; }
+Tile::Tile(int _number) 
+{ 
+	number = _number; 
+}
 
-Tile::~Tile() { }
+Tile::~Tile() 
+{ 
 
-string Tile::toString() { return getType(); }
+}
 
-int Tile::getNumber() { return number; }
+string Tile::toString() 
+{ 
+	return getType(); 
+}
 
-int Tile::getBonus() { 	return 0; }
+int Tile::getNumber() 
+{ 
+	return number; 
+}
 
-string Tile::getType() { return type; }
+int Tile::getBonus() 
+{ 	
+	return 0; 
+}
 
-void Tile::setNumber(int _n) { number = _n; }
+string Tile::getType() 
+{ 
+	return type; 
+}
 
-int Tile::operator+(Tile& t) { return this->number + t.getBonus(); }
+void Tile::setNumber(int _n) 
+{ 
+	number = _n; 
+}
 
-void Tile::setType(string _type) { type = _type; }
+int Tile::operator+(Tile& t) 
+{ 
+	return this->number + t.getBonus(); 
+}
 
-ostream& operator<<(ostream& out, Tile* tile) {
+void Tile::setType(string _type) 
+{ 
+	type = _type; 
+}
+
+ostream& operator<<(ostream& out, Tile* tile) 
+{
 	out << tile->toString();
 	return out;
 }

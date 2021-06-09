@@ -11,7 +11,8 @@ using namespace std;
 #ifndef BOARD
 #define BOARD
 
-class Board {
+class Board 
+{
 private:
 	int nTiles;
 	vector<Tile*>tiles;
@@ -26,6 +27,6 @@ public:
 	int getNumberTiles();
 };
 
-#endif // !BOARD
+#endif //BOARD
 
 

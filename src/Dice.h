@@ -4,7 +4,8 @@
 #ifndef DICE
 #define DICE
 
-class Dice {
+class Dice 
+{
 private:
 	int diceRoll;
 
@@ -15,4 +16,4 @@ public:
 	int getRoll();
 };
 
-#endif // !DICE
+#endif //DICE
